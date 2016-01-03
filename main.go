@@ -92,12 +92,12 @@ func main() {
 	crawlFlags := flag.NewFlagSet("crawl", flag.ExitOnError)
 	crawlFlags.IntVar(&start, "start", 1, "start at this result")
 	crawlFlags.IntVar(&count, "count", 25, "crawl this many results")
-	crawlFlags.StringVar(&htmlDir, "html", "out/html", "directory to write HTML files")
+	crawlFlags.StringVar(&htmlDir, "html", "html", "directory to write HTML files")
 	crawlFlags.IntVar(&workers, "workers", 1, "number of workers")
 
 	// scrape flagset
 	scrapeFlags := flag.NewFlagSet("scrape", flag.ExitOnError)
-	scrapeFlags.StringVar(&htmlDir, "html", "out/html", "directory to read HTML files")
+	scrapeFlags.StringVar(&htmlDir, "html", "html", "directory to read HTML files")
 	scrapeFlags.StringVar(&out, "out", "out", "directory for output")
 
 	// switch on subcommand
