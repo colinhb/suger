@@ -1,8 +1,10 @@
 # Suger
 
+`suger` is a tool to crawl and scrape the film classification database of Singapore's Media Development Authority (MDA).
+
 ## About
 
-`suger` crawls and scrapes the classification database of the Singapore Media Development Authority (MDA). It was a quick and dirty effort (one evening's work). I was learning Go as I went, so `suger` has some unfortunate warts. The few things that new Go users may find interesting in this package:
+`suger` was a quick and dirty effort (one evening's work). I was learning Go as I went, so `suger` has some unfortunate warts. The few things that new Go users may find interesting in this package:
 
  - the lightweight implementation of subcommands, including use of the `flag` package,
  - the use of channels for 'job control', and 
