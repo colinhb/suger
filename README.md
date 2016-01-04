@@ -10,6 +10,8 @@
  - the use of channels for 'job control', and 
  - implementing most of the application in `package libsuger`, which is imported by `package main`.
 
+Using Go for the first time, I was impressed how easy it was to create usable documentation. Adding just a few comments produced [this](https://godoc.org/github.com/colinhb/suger/libsuger).
+
 The MDA classification database is an ASP application, and I have zero experience with ASP, but I was able to reverse engineer ASP requests for my limited needs. Since there is little information about crawling ASP applications online, I plan to document my solution in the future.
 
 In the unlikely event that someone out there actually wants to look at the classification database as a dataset, don't bother actually crawling the database, which is a slow process (72,000 titles). Just expand the tarball `html.tgz` and modify the `suger scrape` subcommand for your purposes (or use your own tool to scrape). (The html directory is not tracked. Too many small files. Thus the tarball.)
